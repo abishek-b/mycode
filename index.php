@@ -53,6 +53,7 @@ function statusChangeCallback(response) {
   function logout(){
     FB.logout(function(res){console.log(res)});
   }
+  //testing
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me',{ locale: 'en_US', fields: 'name, email, picture' },function(response) {
