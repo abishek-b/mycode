@@ -50,6 +50,9 @@ function statusChangeCallback(response) {
         'into this app.';
     }
   }
+  function logout(){
+    FB.logout(function(res){console.log(res)});
+  }
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me',{ locale: 'en_US', fields: 'name, email, picture' },function(response) {
